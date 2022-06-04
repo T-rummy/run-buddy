@@ -70,6 +70,8 @@ header nav ul li a:hover {
     background: #39a6b2;
 }
 
+
+
 footer {
     background: #fce138;
     width: 100%;
@@ -233,11 +235,13 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.step:not(:last-child){
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step-img {
@@ -404,7 +408,16 @@ max-width: 100%;
     margin-top: 5px;
     border-radius: 15px;
     outline: none;
+    background-color: rgba(255,255,255,.5) ;
+
+
     
+}
+.contact-form input:focus, .contact-form textarea:focus {
+
+    background-color: rgba(255,255,255,1);
+    border: 1px solid white;
+
 }
 .contact-form button {
     width: 100%;
